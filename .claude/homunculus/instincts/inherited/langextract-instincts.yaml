@@ -1,0 +1,339 @@
+# Instincts generated from https://github.com/lllyyysss77/langextract
+# Generated: 2026-07-02T11:44:29.305Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: langextract-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Commit Length
+
+## Action
+
+Write moderate-length commit messages (~54 characters)
+
+## Evidence
+
+- Average commit message length: 54 chars
+- Based on 3 commits
+
+---
+id: langextract-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: langextract-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: langextract-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: langextract-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: langextract-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Test Naming
+
+## Action
+
+Name test files using the pattern: *_test.py
+
+## Evidence
+
+- File pattern: *_test.py
+- Consistent across test files
+
+---
+id: langextract-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/langextract
+---
+
+# Langextract Test Types
+
+## Action
+
+Write unit, integration tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, integration
+- Coverage config: no
+
+---
+id: langextract-instinct-file-naming
+trigger: "When creating a new source file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: langextract-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: langextract-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: langextract-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: langextract-instinct-import-style
+trigger: "When importing modules within the package"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: langextract-instinct-export-style
+trigger: "When exporting functions or classes"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: langextract-instinct-test-file-naming
+trigger: "When creating a new test file"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Test File Naming
+
+## Action
+
+Name the file with the pattern *_test.py
+
+## Evidence
+
+- Pattern in testing.filePattern: *_test.py
+
+---
+id: langextract-instinct-test-types
+trigger: "When writing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Test Types
+
+## Action
+
+Include both unit and integration tests
+
+## Evidence
+
+- Pattern in testing.testTypes: unit, integration
+
+---
+id: langextract-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Test Location
+
+## Action
+
+Place test files in the separate 'tests' folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+- Common folder: tests
+
+---
+id: langextract-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/langextract
+---
+
+# Langextract Instinct Commit Format
+
+## Action
+
+Write a concise, descriptive commit message without a required prefix; average length ~54 characters
+
+## Evidence
+
+- Pattern in commits.prefixes: [] (no prefix)
+- Pattern in commits.averageLength: 54
+- Seen in commit: 'Add user-provided output_schema support for Gemini and OpenAI (#483)'
+
